@@ -1,0 +1,12 @@
+:root {
+    --lm-background: #fffefc;
+    /*$lm-icons: #5F5D59*/
+    --lm-text: #37352F;
+    --lm-text-medium: rgba(0,0,0,0.6);
+
+    --dm-background: #2F3437;
+    /*$dm-background2: #3F4447*/
+    /*$dm-icons: #5F5D59*/
+    --dm-text: #EBEBEB;
+    --dm-text-medium: rgba(255, 255, 255, 0.6);
+}

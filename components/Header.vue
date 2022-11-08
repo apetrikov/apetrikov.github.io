@@ -1,4 +1,9 @@
-<!--App has only one layout here-->
 <template>
-  <p>Hello oops!</p>
+  <h3>Hello oops!</h3>
+  <p class="medium">Some text</p>
 </template>
+<style scoped>
+.medium {
+  color: var(--text-medium);
+}
+</style>
