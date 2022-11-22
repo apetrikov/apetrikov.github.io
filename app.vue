@@ -1,32 +1,35 @@
 <!--App has only one layout here-->
 <template>
-  <Html :class="{'lightTheme': isLightTheme}">
     <NuxtPage />
-  </Html>
 </template>
-<script lang="ts" setup>
-  const isLightTheme = ref<boolean>(false)
 
-  const toggleTheme = (): boolean => isLightTheme.value = !isLightTheme.value
+<script setup lang="ts">
 </script>
+
 <style>
 @import 'assets/styles/variables.css';
 
-html {
-  --background: var(--dm-background);
-  --text: var(--dm-text);
-  --text-medium: var(--dm-text-medium);
-  --border-color: var(--dm-border-color);
+@media (prefers-color-scheme: dark) {
+  html {
+    --background: var(--dm-background);
+    --text: var(--dm-text);
+    --text-medium: var(--dm-text-medium);
+    --border-color: var(--dm-border-color);
+  }
 }
 
-html.lightTheme, body.lightTheme {
-  --background: var(--lm-background);
-  --text: var(--lm-text);
-  --text-medium: var(--lm-text-medium);
-  --border-color: var(--lm-border-color);
+@media (prefers-color-scheme: light) {
+  html {
+    --background: var(--lm-background);
+    --text: var(--lm-text);
+    --text-medium: var(--lm-text-medium);
+    --border-color: var(--lm-border-color);
+  }
 }
 
 body {
+  transition: background 0.2s ease;
+
   margin: 0 2rem;
   font-family: inter-var, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol",serif;
   background: var(--background);
