@@ -1,0 +1,29 @@
+@import "colors.css";
+
+:root {
+    /* Light Theme */
+
+    --lm-background: var(--color-base-300);
+    --lm-text: var(--color-gray-800);
+    --lm-text-medium: var(--color-gray-500);
+    --lm-border-color: var(--border-color-light);
+
+    /* Dark Theme */
+
+    --dm-background: #2F3437;
+    --dm-text: #EBEBEB;
+    --dm-text-medium: rgba(255, 255, 255, 0.6);
+    --dm-border-color: var(--border-color-dark);
+
+
+    /* Common */
+
+    --link: var(--color-legacy-red);
+    --link-hover: var(--color-legacy-red);
+    --link-active: var(--color-red-400);
+    --link-visited: var(--color-red-500);
+
+    --button: var(--color-legacy-red);
+    --button-hover: var(--color-legacy-red);
+    --button-active: var(--color-red-400);
+}

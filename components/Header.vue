@@ -1,9 +1,7 @@
 <template>
-  <h3>Hello oops!</h3>
-  <p class="medium">Some text</p>
+  <header class="header">
+    <h1 class="text-dark">Andrey Petrikov</h1>
+  </header>
 </template>
 <style scoped>
-.medium {
-  color: var(--text-medium);
-}
 </style>
